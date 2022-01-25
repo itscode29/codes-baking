@@ -1,3 +1,69 @@
-/* font-family: 'Commissioner', sans-serif;
-font-family: 'Fraunces', serif;
-s
+:root {
+  --primary-color: #66101F;
+  --accent-color-1: #51724E;
+  --accent-color-2: #E06C00;
+  --backround-color: #F8E9DD;
+  --heading-font: font-family: 'Fraunces', serif;
+  --paragraph-font: font-family: 'Commissioner', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 100;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 74;
+}
+
+h3 {
+  font-size: 42px;
+  line-height: 52;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  font-size: 28px;
+  line-height: 34;
+  font-weight: 300;
+}
+
+a .button {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  line-height: 30;
+  padding: 15px 75px;
+}
+
+
+.navbar-brand {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 47;
+}
+
+.nav-item {
+  font-size: 26px;
+  line-height: 32;
+  font-family: var(--paragraph-font);
+  font-weight: 300;
+}
+
+.button-about {
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 0 var(--primary-color);
+}
+
+.button-contact {
+  background-color: var(--accent-color-2);
+  box-shadow: 5px 5px 0 var(var(--accent-color-2);
+
+}
