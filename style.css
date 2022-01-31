@@ -4,7 +4,13 @@
   --accent-color-2: #e06c00;
   --backround-color: #f8e9dd;
   --heading-font: "Fraunces", serif;
-  --paragraph-font: "Commissioner", sans-serif;
+  --body-font: "Commissioner", sans-serif;
+  --section-margin-top: 135px;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--backround-color);
 }
 
 h1,
@@ -25,7 +31,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
@@ -33,30 +39,44 @@ h4 {
 }
 
 p {
-  font-family: var(--paragraph-font);
   font-size: 20px;
   font-weight: 300;
 }
 
-.footer p {
+.header p {
+  margin: 50px 0;
+}
+
+.m-top {
+  margin-top: var(--section-margin-top);
+}
+
+.p-top {
+  padding-top: var(--section-margin-top);
+}
+
+.snippet {
   font-size: 16px;
+  margin: 34px 50px 0 50px;
+  text-align: center;
 }
 
 .button {
   font-family: var(--heading-font);
-  font-size: 24px;
+  font-size: 18px;
   padding: 15px 75px;
   color: white;
   text-decoration: none;
 }
 
 .navbar {
-  background-color: white;
+  background: white !important;
 }
 
 .navbar-brand {
   font-family: var(--heading-font);
   font-weight: 900;
+  margin: 0 20px;
 }
 
 .nav-link {
@@ -65,13 +85,112 @@ p {
 }
 
 .button-about {
-  background-color: var(--primary-color);
-  box-shadow: rgb(255 255 255) 10px 10px 0px -3px,
+  background: var(--primary-color);
+  box-shadow: rgb(255 255 255) 10px 10px 0px -2px,
     var(--primary-color) 10px 10px;
 }
 
 .button-contact {
-  background-color: var(--accent-color-2);
-  box-shadow: rgb(255 255 255) 10px 10px 0px -3px,
+  background: var(--accent-color-2);
+  box-shadow: var(--backround-color) 10px 10px 0px -2px,
     var(--accent-color-2) 10px 10px;
+}
+
+.header {
+  background: white;
+}
+
+.header-image {
+  max-height: 100%;
+}
+
+.icons-header {
+  text-align: center;
+  color: var(--accent-color-1);
+}
+.margin-row {
+  margin-top: 85px;
+}
+
+.icons {
+  background: var(--accent-color-1);
+  border-radius: 50%;
+  height: 15vw;
+  width: 15vw;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.icon-image {
+  height: 12vw;
+  width: 12vw;
+  max-height: 120px;
+  max-width: 120px;
+}
+
+.link-recipes {
+  text-decoration: none;
+  font-family: var(--heading-font);
+  color: var(--accent-color-1);
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-header {
+  text-align: center;
+  color: var(--accent-color-2);
+}
+
+.footer {
+  background: var(--primary-color);
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.site-map a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.site-map h4 {
+  text-align: end;
+}
+
+.site-map li {
+  list-style: none;
+  text-align: end;
+}
+
+.socials {
+  padding-right: 200px;
+}
+
+.socials i {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.social-icons {
+  margin-right: 50px;
+}
+
+.socials p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.socials a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+.signature {
+  font-family: var(--heading-font);
 }

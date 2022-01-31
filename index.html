@@ -33,9 +33,9 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Code's Baking</a>
+        <a class="navbar-brand m-10" href="/">Code's Baking</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,7 +47,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link" href="#">About me</a>
             <a class="nav-link" href="#">Cakes</a>
@@ -57,74 +60,135 @@
         </div>
       </div>
     </nav>
-    <div class="header">
-      <h1>Bake it until you make it</h1>
-      <p>
-        Try out delicious recipes that will surprise all of your loved ones!
-        Simple, easy to follow and quick recipes for begginers and experts.
-        <br />
-        <br />
-        I am Code and this is a compilation of my most liked recipes. I hope you
-        enjoy them!
-      </p>
-      <a href="#" class="button button-about">Learn more</a>
-    </div>
-    <div class="container">
-      <h2>What do you want to bake?</h2>
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
+    <div class="header p-top">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-6">
+            <h1>Bake it until you make it</h1>
+            <p>
+              Try out delicious recipes that will surprise all of your loved
+              ones! Simple, easy to follow and quick recipes for begginers and
+              experts.
+              <br />
+              <br />
+              I am Code and this is a compilation of my most liked recipes. I
+              hope you enjoy them!
+            </p>
+            <a href="#" class="button button-about">Learn more</a>
+          </div>
+          <div class="col-md-6 header-image-container">
+            <img
+              src="/images/portada.svg"
+              alt="Code's Baking, recipies for pastries, cakes, cookies and cupcakes"
+              class="header-image img-fluid"
+            />
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <dev class="col-4"><a href="#">Cakes</a></dev>
-        <dev class="col-4"><a href="#">Cookies</a></dev>
-        <dev class="col-4"><a href="#">Cupcakes</a></dev>
+    </div>
+    <div class="m-top">
+      <div class="container">
+        <h2 class="icons-header">What do you want to bake?</h2>
+        <div class="row margin-row d-flex justify-content-around">
+          <div class="col-md-4 icons d-flex">
+            <img
+              src="/images/cake.svg"
+              alt="Cake recipes by Code's Baking"
+              class="icon-image"
+            />
+          </div>
+          <div class="col-md-4 icons d-flex">
+            <img
+              src="/images/cookies.svg"
+              alt="Cookies recipes by Code's Baking"
+              class="icon-image"
+            />
+          </div>
+          <div class="col-md-4 icons d-flex">
+            <img
+              src="/images/cupcake.svg"
+              alt="Cupcake recipes by Code's Baking"
+              class="icon-image"
+            />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-around">
+          <div class="col-md-4 link-recipes">
+            <a href="#" class="link-recipes">Cakes</a>
+          </div>
+          <div class="col-md-4 link-recipes">
+            <a href="#" class="link-recipes">Cookies</a>
+          </div>
+          <div class="col-md-4 link-recipes">
+            <a href="#" class="link-recipes">Cupcakes</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="section">
-      <h2>Want to get in touch?</h2>
-      <div class="row">
-        <div class="col-6">
+    <div class="container contact m-top">
+      <h2 class="contact-header">Want to get in touch?</h2>
+      <div class="row margin-row">
+        <div class="col-md-6">
           <p>
             Doubts or questions, business inquiries and everything else is
             welcome!
             <br />
+            <br />
             Don’t hesitate to reach out.
           </p>
         </div>
-        <div class="col-6">
-          <a href="#" class="button button-contact">Contact me</a>
+        <div class="col-md-6">
+          <a href="#" class="button button-contact align-bottom">Contact me</a>
         </div>
       </div>
     </div>
-    <div class="footer container">
-      <h3>Code's Baking</h3>
-      <div class="row">
-        <div class="col-4">
-          <h4>Socials</h4>
-          <div class="row">
-            <div class="col-4"><i class="fab fa-instagram"></i></div>
-            <div class="col-4"><i class="fab fa-facebook-f"></i></div>
-            <div class="col-4"><i class="fab fa-twitter"></i></div>
+    <div class="footer m-top">
+      <h3 class="text-center p-4">Code's Baking</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 socials">
+            <h4>Socials</h4>
+            <div class="d-flex justify-content-around social-icons">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <p>
+              <a href="https://github.com/itscode29/codes-baking">
+                Open-source</a
+              >
+              code by
+              <a
+                href="https://www.linkedin.com/in/helena-codesal/"
+                class="signature"
+              >
+                Helena Codesal
+              </a>
+            </p>
           </div>
-          <p>
-            <a href="#">Open-source</a> code by
-            <span class="signature">Helena Codesal</span>
-          </p>
-        </div>
-        <div class="col-4">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            diam felis, volutpat ac ante semper, rutrum mollis erat.
-          </p>
-        </div>
-        <div class="col-4">
-          <h4>Site map</h4>
-          <a href="#">About me</a>
-          <a href="#">Cakes</a>
-          <a href="#">Cookies</a>
-          <a href="#">Cupcakes</a>
+          <div class="col-md-4">
+            <p class="snippet">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              diam felis, volutpat ac ante semper, rutrum mollis erat.
+            </p>
+          </div>
+          <div class="col-md-4 site-map">
+            <h4>Site map</h4>
+            <ul>
+              <li>
+                <a href="#">About me</a>
+              </li>
+              <li>
+                <a href="#">Cakes</a>
+              </li>
+              <li>
+                <a href="#">Cookies</a>
+              </li>
+              <li>
+                <a href="#">Cupcakes</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
