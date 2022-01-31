@@ -53,12 +53,7 @@ p {
 
 .p-top {
   padding-top: var(--section-margin-top);
-}
-
-.snippet {
-  font-size: 16px;
-  margin: 34px 50px 0 50px;
-  text-align: center;
+  padding-bottom: 15px;
 }
 
 .button {
@@ -104,10 +99,35 @@ p {
   max-height: 100%;
 }
 
+.section {
+  position: relative;
+}
+
+.custom-shape-divider-top-1643665533 {
+  position: absolute;
+  top: -136px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1643665533 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 167px;
+}
+
+.custom-shape-divider-top-1643665533 .shape-fill {
+  fill: #ffffff;
+}
+
 .icons-header {
   text-align: center;
   color: var(--accent-color-1);
 }
+
 .margin-row {
   margin-top: 85px;
 }
@@ -193,4 +213,10 @@ p {
 
 .signature {
   font-family: var(--heading-font);
+}
+
+.snippet {
+  font-size: 16px;
+  margin: 34px 50px 0 50px;
+  text-align: center;
 }
