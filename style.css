@@ -53,7 +53,14 @@ p {
 
 .p-top {
   padding-top: var(--section-margin-top);
-  padding-bottom: 15px;
+}
+
+.section-divide {
+  padding-bottom: 50px;
+}
+
+.p-bottom {
+  padding-bottom: var(--section-margin-top);
 }
 
 .button {
@@ -103,7 +110,7 @@ p {
   position: relative;
 }
 
-.custom-shape-divider-top-1643665533 {
+.wave {
   position: absolute;
   top: -136px;
   left: 0;
@@ -112,14 +119,14 @@ p {
   line-height: 0;
 }
 
-.custom-shape-divider-top-1643665533 svg {
+.wave svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 167px;
 }
 
-.custom-shape-divider-top-1643665533 .shape-fill {
+.wave .shape-fill {
   fill: #ffffff;
 }
 
@@ -159,6 +166,28 @@ p {
   text-align: center;
 }
 
+.contact {
+  background: white;
+}
+.wave-contact {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-contact svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 126px;
+}
+
+.wave-contact .shape-fill {
+  fill: #f8e9dd;
+}
 .contact-header {
   text-align: center;
   color: var(--accent-color-2);
