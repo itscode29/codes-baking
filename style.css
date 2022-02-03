@@ -224,7 +224,7 @@ p {
     background: url(/images/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top center;
     background-size: 120%;
   }
 
