@@ -67,6 +67,8 @@ p {
 .nav-link {
   font-family: var(--paragraph-font);
   font-weight: 300;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header-image {
@@ -266,6 +268,14 @@ p {
     padding-bottom: var(--section-margin-top-mobile);
   }
 
+  .margin-row {
+    margin-top: 50px;
+  }
+
+  .margin-small {
+    margin-top: 20px;
+  }
+
   .section-divide-mobile {
     padding-bottom: 50px;
   }
@@ -365,14 +375,6 @@ p {
   .contact-button-div {
     display: flex;
     justify-content: center;
-  }
-
-  .margin-row {
-    margin-top: 50px;
-  }
-
-  .margin-small {
-    margin-top: 20px;
   }
 
   h4 {
@@ -479,7 +481,7 @@ p {
   }
 
   .link-recipes {
-    font-size: var(--fsize-h3-desktops);
+    font-size: var(--fsize-h3-desktop);
     margin-top: 20px;
     text-align: center;
   }
