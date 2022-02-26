@@ -493,6 +493,11 @@ li {
     text-align: left;
   }
 
+  .recipe-button-div {
+    display: flex;
+    justify-content: center;
+  }
+
   /* FOOTER */
   .social-icons {
     display: flex;
