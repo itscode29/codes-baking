@@ -14,11 +14,13 @@
   --fsize-h2-desktop: 36px;
   --fsize-h3-desktop: 28px;
   --fsize-h4-desktop: 22px;
+  --fsize-h5-desktop: 21px;
   --fsize-p-deesktop: 20px;
   --fsize-h1-mobile: 50px;
   --fsize-h2-mobile: 28px;
   --fsize-h3-mobile: 22px;
   --fsize-h4-mobile: 18px;
+  --fsize-h5-mobile: 16px;
   --fsize-p-mobile: 16px;
 }
 
@@ -39,7 +41,8 @@ h1 {
   color: var(--primary-color);
 }
 
-p {
+p,
+li {
   font-weight: 300;
 }
 
@@ -314,7 +317,12 @@ p {
     text-align: center;
   }
 
-  p {
+  h5 {
+    font-size: var(--fsize-h5-mobile);
+  }
+
+  p,
+  li {
     font-size: var(--fsize-p-mobile);
   }
 
@@ -428,6 +436,19 @@ p {
     box-shadow: none;
   }
 
+  .button-recipe {
+    background: var(--accent-color-1);
+    box-shadow: var(--backround-color) 10px 10px 0px -2px,
+      var(--accent-color-1) 10px 10px;
+    transition: 150ms ease-in-out;
+  }
+
+  .button-recipe:active {
+    background-color: var(--darker-accent-1);
+    color: white;
+    box-shadow: none;
+  }
+
   .button-contact:visited {
     color: white;
   }
@@ -455,6 +476,21 @@ p {
   .contact-button-div {
     display: flex;
     justify-content: center;
+  }
+
+  /* RECIPES PAGE */
+  .recipe {
+    padding: 0 30px;
+  }
+
+  .recipe h2 {
+    color: var(--accent-color-1);
+    text-align: center;
+  }
+
+  .recipe h4 {
+    color: var(--accent-color-2);
+    text-align: left;
   }
 
   /* FOOTER */
@@ -492,7 +528,12 @@ p {
     font-size: var(--fsize-h4-desktop);
   }
 
-  P {
+  h5 {
+    font-size: var(--fsize-h5-desktop);
+  }
+
+  P,
+  li {
     font-size: var(--fsize-p-deesktop);
   }
 
@@ -570,6 +611,19 @@ p {
     box-shadow: none;
   }
 
+  .button-recipe {
+    background: var(--accent-color-1);
+    box-shadow: var(--backround-color) 10px 10px 0px -2px,
+      var(--accent-color-1) 10px 10px;
+    transition: 150ms ease-in-out;
+  }
+
+  .button-recipe:hover {
+    color: white;
+    background-color: var(--darker-accent-1);
+    box-shadow: none;
+  }
+
   /* RECIPES SECTION */
   .wrapper {
     display: flex;
@@ -603,5 +657,18 @@ p {
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
+  }
+
+  /* RECIPES PAGE */
+  .recipe {
+    padding: 0 150px;
+  }
+
+  .recipe h2 {
+    color: var(--accent-color-1);
+  }
+
+  .recipe h4 {
+    color: var(--accent-color-2);
   }
 }
